@@ -3,9 +3,10 @@
 
 void setup(void){
     Pinger pinger;
+    char res[5];
+    pinger.ping("pong", res);
 }
 
 void loop(void){
-    char res[5];
-    ping("pong", res);
+    
 }

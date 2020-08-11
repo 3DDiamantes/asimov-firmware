@@ -5,4 +5,10 @@
 
 #define PING_LED LED_BUILTIN
 
+class Pinger {
+    public:
+        Pinger(/* args */);
+        void ping(const char* str, char* result);
+};
+
 #endif
