@@ -1,18 +1,11 @@
 #include <Arduino.h>
-
-void ping(void);
+#include "Pinger.h"
 
 void setup(void){
-    pinMode(LED_BUILTIN,OUTPUT);
+    Pinger pinger;
 }
 
 void loop(void){
-    ping();
-}
-
-void ping(void){
-    digitalWrite(LED_BUILTIN,HIGH);
-    delay(1000);
-    digitalWrite(LED_BUILTIN,LOW);
-    delay(1000);
+    char res[5];
+    ping("pong", res);
 }
