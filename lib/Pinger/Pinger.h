@@ -7,7 +7,7 @@
 
 class Pinger {
     public:
-        Pinger(/* args */);
+        Pinger();
         void ping(const char* str, char* result);
 };
 
